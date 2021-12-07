@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		E186E59B276029E10049922B /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186E59A276029E10049922B /* LearningApp.swift */; };
-		E186E59D276029E10049922B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186E59C276029E10049922B /* ContentView.swift */; };
+		E186E59D276029E10049922B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186E59C276029E10049922B /* HomeView.swift */; };
 		E186E59F276029E30049922B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E186E59E276029E30049922B /* Assets.xcassets */; };
 		E186E5A2276029E30049922B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E186E5A1276029E30049922B /* Preview Assets.xcassets */; };
+		E186E5AE27602A410049922B /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186E5AD27602A410049922B /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E186E597276029E10049922B /* Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E186E59A276029E10049922B /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
-		E186E59C276029E10049922B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E186E59C276029E10049922B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E186E59E276029E30049922B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E186E5A1276029E30049922B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E186E5AD27602A410049922B /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,12 @@
 			isa = PBXGroup;
 			children = (
 				E186E59A276029E10049922B /* LearningApp.swift */,
-				E186E59C276029E10049922B /* ContentView.swift */,
+				E186E5AA27602A140049922B /* Views */,
+				E186E5A927602A0C0049922B /* ViewModels */,
+				E186E5A827602A040049922B /* Models */,
 				E186E59E276029E30049922B /* Assets.xcassets */,
+				E186E5AC27602A1F0049922B /* Helpers */,
+				E186E5AB27602A180049922B /* Resources */,
 				E186E5A0276029E30049922B /* Preview Content */,
 			);
 			path = Learning;
@@ -65,6 +71,43 @@
 				E186E5A1276029E30049922B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E186E5A827602A040049922B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E186E5A927602A0C0049922B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E186E5AD27602A410049922B /* ContentModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E186E5AA27602A140049922B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E186E59C276029E10049922B /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E186E5AB27602A180049922B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E186E5AC27602A1F0049922B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E186E59D276029E10049922B /* ContentView.swift in Sources */,
+				E186E59D276029E10049922B /* HomeView.swift in Sources */,
 				E186E59B276029E10049922B /* LearningApp.swift in Sources */,
+				E186E5AE27602A410049922B /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
