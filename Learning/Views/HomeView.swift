@@ -18,15 +18,27 @@ struct HomeView: View {
                     LazyVStack {
                         ForEach(model.modules) { module in
                             VStack(spacing: 20) {
+                                
+                                NavigationLink(
+                                    destination: {
+                                        ContentView().onAppear {
+                                            model.beginModule(moduleId: module.id)
+                                        }
+                                },
+                                    label: {
+                                        HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
+                                })
                                 // Learning Card
-                                HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
+                                
                                 
                                 // Test Card
                                 HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Lessons", time: module.test.time)
                             }
                         } // ForEach
                     } // LazyVStack
+                    .tint(.black)
                     .padding()
+                    
                 }
             }
             .navigationTitle("Get started")

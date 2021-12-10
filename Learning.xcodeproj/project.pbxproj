@@ -16,6 +16,8 @@
 		E186E5B027602BA40049922B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = E186E5AF27602BA40049922B /* data.json */; };
 		E186E5B227602BF40049922B /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = E186E5B127602BF40049922B /* style.html */; };
 		E186E5B427602DC80049922B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186E5B327602DC80049922B /* Models.swift */; };
+		E1928670276403C1007862F1 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192866F276403C1007862F1 /* ContentViewRow.swift */; };
+		E1BA79FC2762B1F4008D7345 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BA79FB2762B1F4008D7345 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		E186E5AF27602BA40049922B /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		E186E5B127602BF40049922B /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		E186E5B327602DC80049922B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		E192866F276403C1007862F1 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
+		E1BA79FB2762B1F4008D7345 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 			children = (
 				E186E59C276029E10049922B /* HomeView.swift */,
 				E15573812761690700AC0677 /* HomeViewRow.swift */,
+				E1BA79FB2762B1F4008D7345 /* ContentView.swift */,
+				E192866F276403C1007862F1 /* ContentViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,7 +202,9 @@
 			files = (
 				E186E59D276029E10049922B /* HomeView.swift in Sources */,
 				E15573822761690700AC0677 /* HomeViewRow.swift in Sources */,
+				E1BA79FC2762B1F4008D7345 /* ContentView.swift in Sources */,
 				E186E59B276029E10049922B /* LearningApp.swift in Sources */,
+				E1928670276403C1007862F1 /* ContentViewRow.swift in Sources */,
 				E186E5AE27602A410049922B /* ContentModel.swift in Sources */,
 				E186E5B427602DC80049922B /* Models.swift in Sources */,
 			);
