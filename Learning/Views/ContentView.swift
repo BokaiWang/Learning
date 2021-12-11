@@ -15,11 +15,21 @@ struct ContentView: View {
             LazyVStack {
                 if model.currentModule != nil {
                     ForEach(0..<model.currentModule!.content.lessons.count) { index in
+                        NavigationLink(
+                            destination: {
+                                ContentDetailView()
+                                    .onAppear {
+                                        model.beginLesson(lessonIndex: index)
+                                    }
+                        },
+                            label: {
+                                ContentViewRow(index: index)
+                        })
                         
-                        ContentViewRow(index: index)
                     }
                 }
             }
+            .tint(.black)
             .padding()
             .navigationTitle("Learn \(model.currentModule?.category ?? "")")
         }

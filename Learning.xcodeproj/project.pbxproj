@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E15573822761690700AC0677 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15573812761690700AC0677 /* HomeViewRow.swift */; };
+		E15C38192764FD2800A3744F /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C38182764FD2800A3744F /* ContentDetailView.swift */; };
+		E15C381C2765009D00A3744F /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15C381B2765009D00A3744F /* AVKit.framework */; };
+		E15C381E276501B500A3744F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C381D276501B500A3744F /* Constants.swift */; };
 		E186E59B276029E10049922B /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186E59A276029E10049922B /* LearningApp.swift */; };
 		E186E59D276029E10049922B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186E59C276029E10049922B /* HomeView.swift */; };
 		E186E59F276029E30049922B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E186E59E276029E30049922B /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		E15573812761690700AC0677 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		E15C38182764FD2800A3744F /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		E15C381B2765009D00A3744F /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		E15C381D276501B500A3744F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E186E597276029E10049922B /* Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E186E59A276029E10049922B /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
 		E186E59C276029E10049922B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -40,17 +46,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15C381C2765009D00A3744F /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E15C381A2765009D00A3744F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E15C381B2765009D00A3744F /* AVKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E186E58E276029E10049922B = {
 			isa = PBXGroup;
 			children = (
 				E186E599276029E10049922B /* Learning */,
 				E186E598276029E10049922B /* Products */,
+				E15C381A2765009D00A3744F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +124,7 @@
 				E15573812761690700AC0677 /* HomeViewRow.swift */,
 				E1BA79FB2762B1F4008D7345 /* ContentView.swift */,
 				E192866F276403C1007862F1 /* ContentViewRow.swift */,
+				E15C38182764FD2800A3744F /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,6 +134,7 @@
 			children = (
 				E186E5AF27602BA40049922B /* data.json */,
 				E186E5B127602BF40049922B /* style.html */,
+				E15C381D276501B500A3744F /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -203,10 +221,12 @@
 				E186E59D276029E10049922B /* HomeView.swift in Sources */,
 				E15573822761690700AC0677 /* HomeViewRow.swift in Sources */,
 				E1BA79FC2762B1F4008D7345 /* ContentView.swift in Sources */,
+				E15C38192764FD2800A3744F /* ContentDetailView.swift in Sources */,
 				E186E59B276029E10049922B /* LearningApp.swift in Sources */,
 				E1928670276403C1007862F1 /* ContentViewRow.swift in Sources */,
 				E186E5AE27602A410049922B /* ContentModel.swift in Sources */,
 				E186E5B427602DC80049922B /* Models.swift in Sources */,
+				E15C381E276501B500A3744F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
