@@ -22,6 +22,7 @@
 		E186E5B427602DC80049922B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186E5B327602DC80049922B /* Models.swift */; };
 		E1928670276403C1007862F1 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192866F276403C1007862F1 /* ContentViewRow.swift */; };
 		E1BA79FC2762B1F4008D7345 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BA79FB2762B1F4008D7345 /* ContentView.swift */; };
+		E1F0A2B22767EE9000B3123B /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F0A2B12767EE9000B3123B /* RectangleCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		E186E5B327602DC80049922B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		E192866F276403C1007862F1 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 		E1BA79FB2762B1F4008D7345 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1F0A2B12767EE9000B3123B /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				E192866F276403C1007862F1 /* ContentViewRow.swift */,
 				E15C38182764FD2800A3744F /* ContentDetailView.swift */,
 				E15C38212766432800A3744F /* CodeTextView.swift */,
+				E1F0A2B12767EE9000B3123B /* RectangleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				E15C38222766432800A3744F /* CodeTextView.swift in Sources */,
 				E186E5AE27602A410049922B /* ContentModel.swift in Sources */,
 				E186E5B427602DC80049922B /* Models.swift in Sources */,
+				E1F0A2B22767EE9000B3123B /* RectangleCard.swift in Sources */,
 				E15C381E276501B500A3744F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

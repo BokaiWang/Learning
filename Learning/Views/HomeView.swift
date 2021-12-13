@@ -20,6 +20,8 @@ struct HomeView: View {
                             VStack(spacing: 20) {
                                 
                                 NavigationLink(
+                                    tag: module.id,
+                                    selection: $model.currentContentSelected,
                                     destination: {
                                         ContentView().onAppear {
                                             model.beginModule(moduleId: module.id)
