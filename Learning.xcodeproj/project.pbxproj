@@ -11,6 +11,7 @@
 		E15C38192764FD2800A3744F /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C38182764FD2800A3744F /* ContentDetailView.swift */; };
 		E15C381C2765009D00A3744F /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15C381B2765009D00A3744F /* AVKit.framework */; };
 		E15C381E276501B500A3744F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C381D276501B500A3744F /* Constants.swift */; };
+		E15C38222766432800A3744F /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C38212766432800A3744F /* CodeTextView.swift */; };
 		E186E59B276029E10049922B /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186E59A276029E10049922B /* LearningApp.swift */; };
 		E186E59D276029E10049922B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186E59C276029E10049922B /* HomeView.swift */; };
 		E186E59F276029E30049922B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E186E59E276029E30049922B /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		E15C38182764FD2800A3744F /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		E15C381B2765009D00A3744F /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		E15C381D276501B500A3744F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E15C38212766432800A3744F /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		E186E597276029E10049922B /* Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E186E59A276029E10049922B /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
 		E186E59C276029E10049922B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				E1BA79FB2762B1F4008D7345 /* ContentView.swift */,
 				E192866F276403C1007862F1 /* ContentViewRow.swift */,
 				E15C38182764FD2800A3744F /* ContentDetailView.swift */,
+				E15C38212766432800A3744F /* CodeTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				E15C38192764FD2800A3744F /* ContentDetailView.swift in Sources */,
 				E186E59B276029E10049922B /* LearningApp.swift in Sources */,
 				E1928670276403C1007862F1 /* ContentViewRow.swift in Sources */,
+				E15C38222766432800A3744F /* CodeTextView.swift in Sources */,
 				E186E5AE27602A410049922B /* ContentModel.swift in Sources */,
 				E186E5B427602DC80049922B /* Models.swift in Sources */,
 				E15C381E276501B500A3744F /* Constants.swift in Sources */,
