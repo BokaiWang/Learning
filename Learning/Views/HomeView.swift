@@ -12,7 +12,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-            Text("What do you want to do today?")
+                Text("What do you want to do today?")
                     .padding(.leading, 20)
                 ScrollView {
                     LazyVStack {
@@ -23,18 +23,29 @@ struct HomeView: View {
                                     tag: module.id,
                                     selection: $model.currentContentSelected,
                                     destination: {
-                                        ContentView().onAppear {
+                                        ContentView()
+                                            .onAppear {
                                             model.beginModule(moduleId: module.id)
                                         }
-                                },
+                                    },
                                     label: {
+                                        // Learning Card
                                         HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
-                                })
-                                // Learning Card
+                                    })
                                 
-                                
-                                // Test Card
-                                HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Lessons", time: module.test.time)
+                                NavigationLink(
+                                    tag: module.id,
+                                    selection: $model.currentTestSelected,
+                                    destination: {
+                                        TestView()
+                                            .onAppear {
+                                            model.beginTest(moduleId: module.id)
+                                        }
+                                    },
+                                    label: {
+                                        // Test Card
+                                        HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Lessons", time: module.test.time)
+                                    })
                             }
                         } // ForEach
                     } // LazyVStack

@@ -19,12 +19,16 @@ class ContentModel: ObservableObject {
     @Published var currentLesson: Lesson?
     var currentLessonIndex = 0
     
+    // Current question
+    @Published var currentQuestion: Question?
+    var currentQuestionIndex = 0
+    
     // Current lesson explanation
-    @Published var lessonDescription = NSAttributedString()
+    @Published var codeText = NSAttributedString()
     
     // Current selected content and test
     @Published var currentContentSelected:Int?
-    
+    @Published var currentTestSelected:Int?
     
     
     init() {
@@ -91,7 +95,7 @@ class ContentModel: ObservableObject {
         }
         // Set the current lesson
         currentLesson = currentModule!.content.lessons[currentLessonIndex]
-        lessonDescription = addStyling(htmlString: currentLesson!.explanation)
+        codeText = addStyling(htmlString: currentLesson!.explanation)
     }
     
     func nextLesson() {
@@ -101,11 +105,30 @@ class ContentModel: ObservableObject {
         
         // Set the current lesson property
         currentLesson = currentModule!.content.lessons[currentLessonIndex]
-        lessonDescription = addStyling(htmlString: currentLesson!.explanation)
+        codeText = addStyling(htmlString: currentLesson!.explanation)
     }
     
     func hasNextLesson() -> Bool {
         return currentLessonIndex + 1 < currentModule!.content.lessons.count
+    }
+    
+    func beginTest(moduleId:Int) {
+        // Set the current module
+        beginModule(moduleId: moduleId)
+        // Set the current question
+        currentQuestionIndex = 0
+//            if currentModule?.test.questions.count ?? 0 > 0 {
+//                currentQuestion = currentModule?.test.questions[currentQuestionIndex]
+//                lessonDescription = addStyling(htmlString: currentQuestion!.content)
+//            }
+        
+        if let questions = currentModule?.test.questions {
+            if questions.count > 0 {
+                currentQuestion = questions[currentQuestionIndex]
+                codeText = addStyling(htmlString: currentQuestion!.content)
+            }
+        }
+        
     }
     
     // MARK: - Code Styling
