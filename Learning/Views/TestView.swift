@@ -40,18 +40,14 @@ struct TestView: View {
                                     }
                                     else {
                                         // Answer has been submitted
-                                        if index == selectedAnswerIndex && index == model.currentQuestion!.correctIndex {
-                                            // User selcted the right answer
+                                        if index == model.currentQuestion!.correctIndex {
+                                            // The right answer
                                             RectangleCard(color: .green)
                                                 .frame(height:50)
                                         }
-                                        else if index == selectedAnswerIndex && index != model.currentQuestion!.correctIndex {
+                                        else if index != model.currentQuestion!.correctIndex && index == selectedAnswerIndex {
                                             // User selected the wrong answer
                                             RectangleCard(color: .red)
-                                                .frame(height:50)
-                                        }
-                                        else if index == model.currentQuestion!.correctIndex {
-                                            RectangleCard(color: .green)
                                                 .frame(height:50)
                                         }
                                         else {
@@ -60,7 +56,6 @@ struct TestView: View {
                                         }
                                     }
                                     Text(model.currentQuestion!.answers[index])
-                                    
                                 }
                             }
                             .disabled(submitted)
