@@ -61,7 +61,6 @@ struct ContentDetailView: View {
                                 .foregroundColor(.white)
                                 .bold()
                         }
-                        
                     })
             }
             
