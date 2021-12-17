@@ -33,10 +33,11 @@ class ContentModel: ObservableObject {
     
     init() {
         getLocalData()
+        getRemoteData()
     }
     
     // MARK: - Data methods
-    func getLocalData(){
+    func getLocalData() {
         // Get a url
         let url = Bundle.main.url(forResource: "data", withExtension: "json")
         
@@ -69,6 +70,39 @@ class ContentModel: ObservableObject {
         catch {
             print("Couldn't parse style data")
         }
+    }
+    
+    func getRemoteData() {
+        // String path
+        let urlString = "https://bokaiwang.github.io/LearningData/data2.json"
+        // Create a url object
+        let url = URL(string: urlString)
+        guard url != nil else {
+            return
+        }
+        // Create a URLRequest object
+        let request = URLRequest(url: url!)
+        // Get the session and kick off the task
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request) { data, response, error in
+            // Check if there's an error
+            guard error == nil else {
+                return
+            }
+            // Handle the response
+            do {
+                let parsedData = try JSONDecoder().decode([Module].self, from: data!)
+                // If there's a warning saying publishing changes from background threads is not allowed...
+                // Dispatch it to the main thread
+                DispatchQueue.main.async {
+                    self.modules += parsedData
+                }
+            } catch  {
+                return
+            }
+        }
+        dataTask.resume()
+
     }
     
     // MARK: - Module navigation methods

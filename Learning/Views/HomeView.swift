@@ -18,7 +18,6 @@ struct HomeView: View {
                     LazyVStack {
                         ForEach(model.modules) { module in
                             VStack(spacing: 20) {
-                                
                                 NavigationLink(
                                     tag: module.id,
                                     selection: $model.currentContentSelected,
@@ -47,6 +46,7 @@ struct HomeView: View {
                                         HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Lessons", time: module.test.time)
                                     })
                             }
+                            .padding(.bottom, 12)
                         } // ForEach
                     } // LazyVStack
                     .tint(.black)
