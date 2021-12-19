@@ -143,6 +143,11 @@ class ContentModel: ObservableObject {
     }
     
     func hasNextLesson() -> Bool {
+        // SwiftUI rerenders everything, so this is still fired even after complete button is clicked
+        // Therefore, we need to check if it's nil
+        guard currentModule != nil else {
+            return false
+        }
         return currentLessonIndex + 1 < currentModule!.content.lessons.count
     }
     
